@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="label">Login-Page</h1>
+
+        <form class="loginForm" method="post" action="./quiz.html" name="form" onsubmit="return validated ()">
+            <div class="font">Email or Phone</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="emailErr">Please Fill up your Email or Phone</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="passwordErr">Please Fill up your Password</div>
+            <p>Forgot password? <a href="#">Click Here!</a></p>
+            <button type="submit">Login</button>
+        </form>
+
+    </div>
+</body>
+
+<script src="valid.js"></script>
+</html>
